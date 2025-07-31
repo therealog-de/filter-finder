@@ -7,11 +7,12 @@
 </head>
 <body>
   <header>
-    <img src="Logo_M+H_1c.png" alt="MANN+HUMMEL Logo" height="40" />
+    <img src="logo.svg" alt="MANN+HUMMEL Logo" height="40" />
     <h1>Filter Finder</h1>
   </header>
   <main>
-    <input type="text" id="searchInput" placeholder="Enter filter model (e.g. CPA2-2540)" />
+    <input type="text" id="searchInput" placeholder="Enter filter model (e.g. CPA2-2540)"
+           onkeydown="if(event.key === 'Enter') search()" />
     <button onclick="search()">Search</button>
     <div id="results"></div>
   </main>

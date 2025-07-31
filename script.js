@@ -16,7 +16,6 @@ async function search() {
     return;
   }
 
-  // Show your product
   let html = '<h2>Your Product</h2><table border="1"><tr><th>Field</th><th>Value</th></tr>';
   for (const [key, value] of Object.entries(match)) {
     if (value && !['Matching to', 'Alternate Match'].includes(key)) {
@@ -25,7 +24,6 @@ async function search() {
   }
   html += '</table>';
 
-  // Find related matches
   const matchId = match["Matching to"];
   const altId = match["Alternate Match"];
   const related = data.filter(p =>
