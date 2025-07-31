@@ -1,1 +1,6 @@
-body { font-family: sans-serif; color: #222; }
+
+body { font-family: sans-serif; margin: 0; padding: 0; }
+header { background-color: #46af28; padding: 1rem; color: white; display: flex; align-items: center; gap: 1rem; }
+main { padding: 1rem; }
+input { padding: 0.5rem; width: 80%; margin-bottom: 1rem; }
+footer { text-align: center; font-size: 0.8rem; color: #666; padding: 1rem; }
